@@ -20,5 +20,12 @@
     - Guessses remaining: 4
 3. ADD event listener to btton
     - on click
+
+
+
+
+
+
+## STYLING?!?!
     
 
