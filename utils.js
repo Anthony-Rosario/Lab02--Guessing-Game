@@ -31,3 +31,21 @@ export function start() {
 }
 
 
+export function guessNumber() {
+    userInput = Number(input1.value);
+
+    if (isNaN(userInput) || userInput < 1 || userInput > 20){
+        return;
+    }
+    
+    let compareNum = compareN(userInput, target);
+    changeView(compareNum);
+
+    input1.value = '';
+}
+
+
+function guessCounter(){
+    counter++;
+    guessesLeft.textContent = 4 - counter; 
+}
