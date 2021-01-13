@@ -1,18 +1,29 @@
-// IMPORT MODULES under test here:
-// import { example } from '../example.js';
+import { compareN } from '../utils.js';
+
+
 
 const test = QUnit.test;
 
-test('time to test a function', (expect) => {
-    //Arrange
-    // Set up your arguments and expectations
-    const expected = true;
+test('The function should determine if the users input is equal to a random number between 1 and 20', (expect) => {
     
-    //Act 
-    // Call the function you're testing and set the result to a const
-    const actual = false;
+    const expected = 0;
+    const actual = compareN(15, 15);
 
-    //Expect
-    // Make assertions about what is expected versus the actual result
+    expect.equal(actual, expected);
+});
+
+
+test('the function should determine if the users input is lower than the random nubmer', (expect) => {
+    const expected = -1;
+    const actual = compareN(6, 9);
+
+    expect.equal(actual, expected);
+});
+
+
+test('the function should determine if the users input is higher than the random number', (expect) => {
+    const expected = 1;
+    const actual = compareN(16, 9);
+
     expect.equal(actual, expected);
 });
