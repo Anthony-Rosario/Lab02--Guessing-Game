@@ -89,7 +89,7 @@ function success(){
 
 
 function failure(){
-    guessANum.textContent = `Sorry, you did not guess the correct value of ${target}.`;
+    guessANum.textContent = `Aren't you psychic? How did you not know it was ${target}.`;
     guessButton.style.visibility = 'hidden';
     input1.style.visibility = 'hidden';
     resetButton.style.visibility = 'visible';
@@ -110,13 +110,13 @@ function endGame(compareR){
 
 
 export function goHigher(){
-    guessANum.textContent = 'You need to guess higher!';
-    prevNum.textContent = `Your last guess: ${userInput}`;
+    guessANum.textContent = 'Guess higher!';
+    prevNum.textContent = `Final chance!: ${userInput}`;
 }
 
 export function goLower(){
-    guessANum.textContent = 'You need to guess lower!';
-    prevNum.textContent = `Your last guess: ${userInput}`;
+    guessANum.textContent = 'Guess lower!';
+    prevNum.textContent = `Final chance: ${userInput}`;
 }
 
 export function resetGame() {

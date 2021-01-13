@@ -4,6 +4,7 @@ import { compareN } from '../utils.js';
 
 const test = QUnit.test;
 
+
 test('The function should determine if the users input is equal to a random number between 1 and 20', (expect) => {
     
     const expected = 0;
