@@ -1,5 +1,17 @@
-// import functions and grab DOM elements
+import { start, resetGame, guessNumber } from './utils.js';
 
-// initialize state
+const startButton = document.getElementById('button1');
+const resetButton = document.getElementById('button2');
+const guessButton = document.getElementById('button3');
 
-// set event listeners to update state and DOM
+startButton.addEventListener('click', () => {
+    start();
+});
+
+resetButton.addEventListener('click', () => {
+    resetGame();
+});
+
+guessButton.addEventListener('click', () => {
+    guessNumber();
+});

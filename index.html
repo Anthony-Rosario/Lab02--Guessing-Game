@@ -9,46 +9,48 @@
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/home.css">
-    <title>Document</title>
+    <title>Guessing Game?...</title>
 </head>
 
 <body>
-    <header>
-        <div class="gutter-right logo">
-            <img src="assets/big-logo.png"/>
-        </div>
-    </header>
     <main>
-        <section class="main-section">
-            <img class="main-logo" src="assets/alchemy-logo.png"/>
-            <h2>
-                Welcome to Alchemy Bootstrap!
-            </h2>
-
-            <content>
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam repellendus similique consectetur voluptas facilis molestiae voluptates nobis error sapiente, ad, ipsa vero non, sint eligendi? Eos praesentium iusto magnam exercitationem.
-                Earum sunt voluptatibus molestias, sint voluptatum quos reiciendis. Id asperiores deleniti dolores provident, eius, nostrum aperiam vel, optio qui illo corrupti in. Eum quam, est nemo porro sapiente excepturi assumenda.
-                Rerum unde quidem maxime. Ullam, dolores labore molestias voluptatibus adipisci quod? Quaerat nihil inventore molestiae assumenda, voluptates vel necessitatibus eligendi? Accusamus ratione eligendi reprehenderit? Beatae incidunt molestias ea soluta nulla.
-                Fugiat quae soluta voluptate mollitia praesentium modi ex illo, autem assumenda, vel aliquam fugit possimus dolorem esse corporis ipsa! Voluptatem sapiente error non, ea optio suscipit quasi maxime nobis ex?
-                Et ipsa tenetur ullam ab nesciunt quas fugit velit impedit illum esse eligendi corporis culpa praesentium aspernatur ex sint veniam quidem, doloribus corrupti hic vitae. Eum neque ducimus omnis exercitationem?
-            </p>
-            <hr />
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam repellendus similique consectetur voluptas facilis molestiae voluptates nobis error sapiente, ad, ipsa vero non, sint eligendi? Eos praesentium iusto magnam exercitationem.
-                Earum sunt voluptatibus molestias, sint voluptatum quos reiciendis. Id asperiores deleniti dolores provident, eius, nostrum aperiam vel, optio qui illo corrupti in. Eum quam, est nemo porro sapiente excepturi assumenda.
-                Rerum unde quidem maxime. Ullam, dolores labore molestias voluptatibus adipisci quod? Quaerat nihil inventore molestiae assumenda, voluptates vel necessitatibus eligendi? Accusamus ratione eligendi reprehenderit? Beatae incidunt molestias ea soluta nulla.
-                Fugiat quae soluta voluptate mollitia praesentium modi ex illo, autem assumenda, vel aliquam fugit possimus dolorem esse corporis ipsa! Voluptatem sapiente error non, ea optio suscipit quasi maxime nobis ex?
-                Et ipsa tenetur ullam ab nesciunt quas fugit velit impedit illum esse eligendi corporis culpa praesentium aspernatur ex sint veniam quidem, doloribus corrupti hic vitae. Eum neque ducimus omnis exercitationem?
-            </p>
+        <section class="container1" id="container1">
+            <header>
+                <h1>Welcome to the Thunderdome!</h1>
+            </header>
+            <h2>Rules</h2>
+            <ul>
+                <li>Pressing the start button will generate a random number from 1 to 20</li>
+                <li>Its is your job to guess the number correctly</li>
+                <li>use the text field to input your number</li>
+                <li>You will have 4 chances at guessing correctly</li>
+                <li>You will be notified if you need to guess a number higher or lower than what you input</li>
+                <li>You will get the option to restart the game after each round</li>
+            </ul>
+            <div class="box">
+                <a href="#" class="btn btn-1 btn-animation-1" id="button1">Hover Over Me</a> 
+            </div>
+            <input class="input-1" id="input-1" placeholder="Number from 1 - 20" />
+            <div class="box2">
+                <a href="#" class="btn btn-2 btn-animation-1" id="button3">Guess</a> 
+            </div>
+            <container class="hidden-stuff" id="hidden-stuff" style="visibility: hidden;">
+                <div id="hidden-text">You got</div>
+                <div id="hidden-guessL">4</div>
+                <div id="hidden-chancesL">Chances left</div>
+            </container>
+        </section>
+        <section class="container1" id="container2" style="visibility: hidden;">
+            <div id="guess-" style="visibility: hidden;">Guess A Number</div>
+            <div class="last-num" id="guess-num" style="visibility: hidden;">''</div>
+            <button id="button2" class="button2" style="visibility: hidden;">Replay?</button>
 
         </section>
+
     </main>
-    <footer>
-        <div class="copy gutter-right">&copy; 2020 Alchemy Code Lab</div>
-    </footer>
 
     <script type="module" src="app.js"></script>
+    <script type="module" src="utils.js"></script>
 </body>
 
 </html>
