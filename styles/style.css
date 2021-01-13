@@ -1,25 +1,11 @@
 
 body {
-    /* https://coolors.co/generate and click export -> scss to get the colors to copy and paste below*/
-    /* --color1: hsla(349, 69%, 76%, 1);
-    --color2: hsla(207, 67%, 44%, 1);
-    --color3: hsla(200, 61%, 56%, 1);
-    --color4: hsla(187, 41%, 94%, 1);
-    --color5: hsla(170, 28%, 95%, 1); */
-/* 
-    /* --color1: hsla(45, 86%, 83%, 1);
-    --color2: hsla(135, 65%, 98%, 1);
-    --color3: hsla(315, 37%, 86%, 1);
-    --color4: hsla(45, 73%, 98%, 1);
-    --color5: hsla(224, 40%, 79%, 1); */
-    
     --header-height: 80px;
     --shadow: 0px 10px 20px -12px rgba(0,0,0,0.45);
     --gutter: 30px;
     --footer-height: 25px;
     font-family: 'Titillium Web', sans-serif;
     background-color: var(--color2);
-    
 }
 
 main {
@@ -108,12 +94,15 @@ header {
 .box2 {
   margin-top: 1rem;
   visibility: hidden;
-  
-  
+}
+
+.box {
+  margin-top: 1rem;
 }
 
 .input-1 {
   visibility: hidden;
+  margin-top: 1rem;
 }
 
 .button2 {
@@ -133,16 +122,16 @@ header {
   padding: 5px 10px;
   border-radius:100px;
   display:inline-block;
-  transition: all .5s;
+  transition: all .3s;
 }
 
 .btn-white{
-  background:rgba(30, 96, 218, 0.705);
+  background:rgba(232, 232, 233, 0.705);
   color:#000;
 }
 
 .btn:hover{
-   box-shadow:0px 10px 10px rgba(122, 253, 207, 0.74);
+   box-shadow:0px 10px 10px rgba(26, 145, 103, 0.74);
    transform : translateY(-3px);
 }
 
@@ -152,7 +141,7 @@ header {
 }
 
 .btn-bottom-animation-1{
-  animation:comeFromBottom 1s ease-out .8s;
+  animation: comeFromBottom 1s ease-out .8s;
 }
 
 .btn::after{

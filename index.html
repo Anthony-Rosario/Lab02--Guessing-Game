@@ -19,10 +19,13 @@
 <body>
     <main>
         <section class="container1" id="container1">
+            
             <header>
                 <h1>Welcome to the Thunderdome!</h1>
             </header>
+            
             <h2>Rules</h2>
+            
             <ul>
                 <li>Pressing the start button will generate a random number from 1 to 20</li>
                 <li>Its is your job to guess the number correctly</li>
@@ -31,6 +34,7 @@
                 <li>You will be notified if you need to guess a number higher or lower than what you input</li>
                 <li>You will get the option to restart the game after each round</li>
             </ul>
+            
             <div class="box">
                 <a href="#" class="btn btn-1 btn-animation-1" id="button1">Hover Over Me</a> 
             </div>
@@ -38,23 +42,25 @@
             <div class="box2">
                 <a href="#" class="btn btn-2 btn-animation-1" id="button3">Guess</a> 
             </div>
+            
             <container class="hidden-stuff" id="hidden-stuff" style="visibility: hidden;">
                 <div id="hidden-text">You got</div>
                 <div id="hidden-guessL">4</div>
                 <div id="hidden-chancesL">Chances left</div>
             </container>
         </section>
+        
         <section class="container1" id="container2" style="visibility: hidden;">
             <div id="guess-" style="visibility: hidden;">Guess A Number</div>
             <div class="last-num" id="guess-num" style="visibility: hidden;">''</div>
             <button id="button2" class="button2" style="visibility: hidden;">Replay?</button>
-
         </section>
 
     </main>
-
+    
     <script type="module" src="app.js"></script>
     <script type="module" src="utils.js"></script>
+
 </body>
 
 </html>
