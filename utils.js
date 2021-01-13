@@ -30,6 +30,21 @@ export function start() {
     return;
 }
 
+function changeView(compareR){
+
+    guessCounter();
+
+    if (compareR === 0) {
+        success();
+    } else if (compareR === 1){
+        goLower();
+    } else if (compareR === -1){
+        goHigher();
+    }
+
+    endGame(compareR);
+
+}
 
 export function guessNumber() {
     userInput = Number(input1.value);
@@ -44,13 +59,10 @@ export function guessNumber() {
     input1.value = '';
 }
 
-
-
 function guessCounter(){
     counter++;
     guessesLeft.textContent = 4 - counter; 
 }
-
 
 
 export function compareN(userInput, target) {
@@ -62,7 +74,6 @@ export function compareN(userInput, target) {
         return -1;
     }
 }
-
 
 function success(){
     guessANum.textContent = `Hoorraayyy! You guessed the correct value of ${target}!`;
@@ -86,7 +97,6 @@ function failure(){
     return;
 }
 
-
 function endGame(compareR){
     if (counter === 4){
         if (compareR !== 0) {
@@ -99,18 +109,15 @@ function endGame(compareR){
 }
 
 
-
 export function goHigher(){
     guessANum.textContent = 'You need to guess higher!';
     prevNum.textContent = `Your last guess: ${userInput}`;
 }
 
-
 export function goLower(){
     guessANum.textContent = 'You need to guess lower!';
     prevNum.textContent = `Your last guess: ${userInput}`;
 }
-
 
 export function resetGame() {
     counter = 0;
@@ -129,3 +136,5 @@ export function resetGame() {
     chancesText.textContent = 'guesses remaining!';
     prevNum.textContent = '';
 }
+
+
