@@ -97,3 +97,35 @@ function endGame(compareR){
         return;
     }
 }
+
+
+
+export function goHigher(){
+    guessANum.textContent = 'You need to guess higher!';
+    prevNum.textContent = `Your last guess: ${userInput}`;
+}
+
+
+export function goLower(){
+    guessANum.textContent = 'You need to guess lower!';
+    prevNum.textContent = `Your last guess: ${userInput}`;
+}
+
+
+export function resetGame() {
+    counter = 0;
+    target = 0;
+    guessesLeft.textContent = 4;
+    input1.value = '';
+    input1.style.visibility = 'hidden';
+    guessButton.style.visibility = 'hidden';
+    guessANum.style.visibility = 'hidden';
+    startButton.style.visibility = 'visible';
+    resetButton.style.visibility = 'hidden';
+    guessANum.textContent = 'Guess a number!';
+    container1.style.visibility = 'hidden';
+    section1.style.visibility = 'hidden';
+    youGot.textContent = 'You have';
+    chancesText.textContent = 'guesses remaining!';
+    prevNum.textContent = '';
+}
