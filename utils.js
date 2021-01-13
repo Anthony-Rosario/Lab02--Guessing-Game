@@ -45,7 +45,55 @@ export function guessNumber() {
 }
 
 
+
 function guessCounter(){
     counter++;
     guessesLeft.textContent = 4 - counter; 
+}
+
+
+
+export function compareN(userInput, target) {
+    if (userInput === target) {
+        return 0;
+    } else if (userInput > target) {
+        return 1;
+    } else if (userInput < target) {
+        return -1;
+    }
+}
+
+
+function success(){
+    guessANum.textContent = `Hoorraayyy! You guessed the correct value of ${target}!`;
+    guessButton.style.visibility = 'hidden';
+    input1.style.visibility = 'hidden';
+    resetButton.style.visibility = 'visible';
+    youGot.textContent = 'You guessed right';
+    guessesLeft.textContent = counter;
+    chancesText.textContent = 'Attempts Remaining!';
+    prevNum.textContent = '';
+    return;
+}
+
+
+function failure(){
+    guessANum.textContent = `Sorry, you did not guess the correct value of ${target}.`;
+    guessButton.style.visibility = 'hidden';
+    input1.style.visibility = 'hidden';
+    resetButton.style.visibility = 'visible';
+    prevNum.textContent = '';
+    return;
+}
+
+
+function endGame(compareR){
+    if (counter === 4){
+        if (compareR !== 0) {
+            failure();
+        } else {
+            success();
+        }
+        return;
+    }
 }
